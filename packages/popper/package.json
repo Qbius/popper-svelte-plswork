@@ -1,13 +1,13 @@
 {
-  "name": "my-popperjs",
-  "version": "0.0.2",
+  "name": "test-popperjs",
+  "version": "0.0.0",
   "description": "A kickass library to manage your poppers",
   "homepage": "https://popper.js.org",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/FezVrasta/popper.js.git"
   },
-  "author": "Federico Zivolo <federico.zivolo@gmail.com>",
+  "author": "shaoyuee <13588317944@163.com>",
   "contributors": [
     "Contributors (https://github.com/FezVrasta/popper.js/graphs/contributors)"
   ],
