@@ -1,7 +1,7 @@
 {
-  "name": "my-popperjs",
-  "version": "16.7.1",
-  "description": "A kickass library to manage your poppers",
+  "name": "@vusion/popper.js",
+  "version": "1.0.0",
+  "description": "A kickass library to manage your poppers, ",
   "homepage": "https://popper.js.org",
   "repository": {
     "type": "git",

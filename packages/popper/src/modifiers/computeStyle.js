@@ -2,6 +2,7 @@ import getSupportedPropertyName from '../utils/getSupportedPropertyName';
 import find from '../utils/find';
 import getOffsetParent from '../utils/getOffsetParent';
 import getBoundingClientRect from '../utils/getBoundingClientRect';
+import isIE from '../utils/isIE';
 
 /**
  * @function
@@ -74,7 +75,7 @@ export default function computeStyle(data, options) {
     left = offsets.left;
   }
   if (gpuAcceleration && prefixedProperty) {
-    styles[prefixedProperty] = `translate3d(${left}px, ${top}px, 0)`;
+    styles[prefixedProperty] = isIE(9) ? `translate(${left}px, ${top}px)` : `translate3d(${left}px, ${top}px, 0)`;
     styles[sideA] = 0;
     styles[sideB] = 0;
     styles.willChange = 'transform';

@@ -14,5 +14,5 @@ import getFixedPositionOffsetParent from './getFixedPositionOffsetParent';
  */
 export default function getReferenceOffsets(state, popper, reference, fixedPosition = null) {
   const commonOffsetParent = fixedPosition ? getFixedPositionOffsetParent(popper) : findCommonOffsetParent(popper, reference);
-  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition);
+  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent, fixedPosition, 'reference');
 }

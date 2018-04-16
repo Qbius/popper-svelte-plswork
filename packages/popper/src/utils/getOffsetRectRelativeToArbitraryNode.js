@@ -5,7 +5,7 @@ import getBoundingClientRect from './getBoundingClientRect';
 import runIsIE from './isIE';
 import getClientRect from './getClientRect';
 
-export default function getOffsetRectRelativeToArbitraryNode(children, parent, fixedPosition = false) {
+export default function getOffsetRectRelativeToArbitraryNode(children, parent, fixedPosition = false, type) {
   const isIE10 = runIsIE(10);
   const isHTML = parent.nodeName === 'HTML';
   const childrenRect = getBoundingClientRect(children);
@@ -49,7 +49,7 @@ export default function getOffsetRectRelativeToArbitraryNode(children, parent, f
   }
 
   if (
-    isIE10 && !fixedPosition
+    (isIE10 || (runIsIE(9) && type === 'reference')) && !fixedPosition
       ? parent.contains(scrollParent)
       : parent === scrollParent && scrollParent.nodeName !== 'BODY'
   ) {

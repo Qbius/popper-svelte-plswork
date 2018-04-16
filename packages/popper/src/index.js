@@ -10,6 +10,9 @@ import disableEventListeners from './methods/disableEventListeners';
 import Defaults from './methods/defaults';
 import placements from './methods/placements';
 
+import raf from 'raf';
+raf.polyfill();
+
 export default class Popper {
   /**
    * Create a new Popper.js instance
