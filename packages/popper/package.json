@@ -1,6 +1,6 @@
 {
-  "name": "popper.js",
-  "version": "1.14.1",
+  "name": "my-popperjs",
+  "version": "0.0.2",
   "description": "A kickass library to manage your poppers",
   "homepage": "https://popper.js.org",
   "repository": {
@@ -50,5 +50,12 @@
   },
   "resolutions": {
     "micromatch": "^3.0.3"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "raf": "^3.4.0",
+    "typescript": "^2.7.1"
   }
 }
