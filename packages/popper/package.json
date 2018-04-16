@@ -1,28 +1,21 @@
 {
-  "name": "test-popperjs",
-  "version": "1.0.0",
+  "name": "m-popperjs",
+  "version": "0.0.0",
   "description": "A kickass library to manage your poppers",
   "homepage": "https://popper.js.org",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FezVrasta/popper.js.git"
+    "url": "git+https://github.com/vusion/popper.js.git"
   },
   "author": "shaoyuee <13588317944@163.com>",
-  "contributors": [
-    "Contributors (https://github.com/FezVrasta/popper.js/graphs/contributors)"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FezVrasta/popper.js/issues"
+    "url": "https://github.com/vusion/popper.js/issues"
   },
   "keywords": [
     "popperjs",
-    "component",
-    "drop",
-    "tooltip",
-    "popover",
-    "position",
-    "attached"
+    "vusion",
+    "cloud"
   ],
   "main": "dist/umd/popper.js",
   "module": "dist/esm/popper.js",
